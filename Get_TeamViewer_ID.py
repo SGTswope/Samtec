@@ -21,7 +21,7 @@ def GetTV_ID():
     try:
         root_key2 = winreg.OpenKey(root, r'SOFTWARE\WOW6432Node\TeamViewer', 0, access=winreg.KEY_READ)
         Pathname2 = winreg.QueryValueEx(root_key2, "ClientID")
-        print('\n\nFrom :  HKLM\SOFTWARE\WOW6432Node\TeamViewer\n'+Pathname)
+        print('\n\nFrom :  HKLM\SOFTWARE\WOW6432Node\TeamViewer\n'+Pathname2)
     except:
         print('\n\nNo ID at HKLM\SOFTWARE\WOW6432Node\TeamViewer')
 
