@@ -14,22 +14,16 @@ def GetTV_ID():
     try:
         root_key = winreg.OpenKey(root, r'SOFTWARE\TeamViewer', 0, access=winreg.KEY_READ)
         Pathname = winreg.QueryValueEx(root_key, "ClientID")
-        print('\n\nFrom :  HKLM\SOFTWARE\TeamViewer\n')
-        print(Pathname)
+        print("\n\nFrom :  HKLM\SOFTWARE\TeamViewer\n" + Pathname)
     except Exception as e:
-        print('\n\nNo ID at HKLM\SOFTWARE\TeamViewer')
-        print('\n\nError: ')
-        print(e)
+        print("\n\nNo ID at HKLM\SOFTWARE\TeamViewer")
 
     try:
         root_key2 = winreg.OpenKey(root, r'SOFTWARE\WOW6432Node\TeamViewer', 0, access=winreg.KEY_READ)
         Pathname2 = winreg.QueryValueEx(root_key2, "ClientID")
-        print('\n\nFrom :  HKLM\SOFTWARE\WOW6432Node\TeamViewer\n')
-        print(Pathname2)
+        print("\n\nFrom :  HKLM\SOFTWARE\WOW6432Node\TeamViewer\n" + Pathname2)
     except Exception as e:
-        print('\n\nNo ID at HKLM\SOFTWARE\WOW6432Node\TeamViewer')
-        print('\n\nError: ')
-        print(e)
+        print("\n\nNo ID at HKLM\SOFTWARE\WOW6432Node\TeamViewer")
 
     #print()
     #print()
