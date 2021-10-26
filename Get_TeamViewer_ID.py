@@ -1,9 +1,6 @@
 from winreg import HKEY_LOCAL_MACHINE
 import winreg
 
-print()
-print()
-print()
 
 def GetTV_ID():
 
@@ -24,16 +21,6 @@ def GetTV_ID():
         print("\n\nFrom :  HKLM\SOFTWARE\WOW6432Node\TeamViewer\n", Pathname2)
     except Exception as e:
         print("\n\nNo ID at HKLM\SOFTWARE\WOW6432Node\TeamViewer")
-
-    #print()
-    #print()
-    #print("From :  HKLM\SOFTWARE\TeamViewer")
-    #print(Pathname)
-    #print()
-    #print("From :  HKLM\SOFTWARE\WOW6432Node\TeamViewer")
-    #print(Pathname2)
-    #print()
-    #print()
 
 
 GetTV_ID()
