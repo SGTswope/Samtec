@@ -1,3 +1,8 @@
+#Author: Devan Swope
+#Company: Samtec, Inc.
+#Date created: 10/26/2021
+
+
 from winreg import HKEY_LOCAL_MACHINE
 import winreg
 
